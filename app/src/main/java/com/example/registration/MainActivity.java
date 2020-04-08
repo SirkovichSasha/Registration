@@ -2,15 +2,11 @@ package com.example.registration;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,15 +35,11 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View view) {
 
-               String name=UserNameEdit.getText().toString();
-               String email=emailEdit.getText().toString();
+               String username=UserNameEdit.getText().toString();
+               String mailCount=emailEdit.getText().toString();
 
-               String str1=getString(R.string.Result1);
-               String str2=getString(R.string.Result2);
-
-
-
-               result.setText(str1+" "+name+" "+str2+" "+email);
+               String text = getString(R.string.welcome_messages, username, mailCount);
+               result.setText(text);
 
 
            }
@@ -55,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        result=findViewById(R.id.ResultTextView);
-        UserNameEdit=findViewById(R.id.UserNameEdit);
-        emailEdit=findViewById(R.id.EmailEdit);
-        btnOK=findViewById(R.id.OkBtn);
-        ClearBtn=findViewById(R.id.ClearBtn);
+        result=findViewById(R.id.resultTextView);
+        UserNameEdit=findViewById(R.id.userNameEdit);
+        emailEdit=findViewById(R.id.emailEdit);
+        btnOK=findViewById(R.id.okBtn);
+        ClearBtn=findViewById(R.id.clearBtn);
 
 
     }

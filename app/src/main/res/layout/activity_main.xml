@@ -7,20 +7,20 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/UserText"
+        android:id="@+id/userText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="107dp"
         android:layout_marginBottom="25dp"
         android:text="@string/user_name"
-        app:layout_constraintBottom_toTopOf="@+id/UserNameEdit"
+        app:layout_constraintBottom_toTopOf="@+id/userNameEdit"
         app:layout_constraintHorizontal_bias="0.237"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/UserNameEdit"
+        android:id="@+id/userNameEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
@@ -28,8 +28,8 @@
         android:inputType="textPersonName"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/EmailText"
-        app:layout_constraintStart_toStartOf="@+id/UserText"
-        app:layout_constraintTop_toBottomOf="@+id/UserText" />
+        app:layout_constraintStart_toStartOf="@+id/userText"
+        app:layout_constraintTop_toBottomOf="@+id/userText" />
 
     <TextView
         android:id="@+id/EmailText"
@@ -37,47 +37,47 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="19dp"
         android:text="@string/email"
-        app:layout_constraintBottom_toTopOf="@+id/EmailEdit"
-        app:layout_constraintStart_toStartOf="@+id/UserNameEdit"
-        app:layout_constraintTop_toBottomOf="@+id/UserNameEdit" />
+        app:layout_constraintBottom_toTopOf="@+id/emailEdit"
+        app:layout_constraintStart_toStartOf="@+id/userNameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEdit" />
 
     <EditText
-        android:id="@+id/EmailEdit"
+        android:id="@+id/emailEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/OkBtn"
+        app:layout_constraintBottom_toTopOf="@+id/okBtn"
         app:layout_constraintStart_toStartOf="@+id/EmailText"
         app:layout_constraintTop_toBottomOf="@+id/EmailText" />
 
     <Button
-        android:id="@+id/OkBtn"
+        android:id="@+id/okBtn"
         android:layout_width="103dp"
         android:layout_height="37dp"
         android:layout_marginBottom="22dp"
         android:text="@string/ok"
-        app:layout_constraintBottom_toTopOf="@+id/ClearBtn"
-        app:layout_constraintStart_toStartOf="@+id/ClearBtn"
-        app:layout_constraintTop_toBottomOf="@+id/EmailEdit" />
+        app:layout_constraintBottom_toTopOf="@+id/clearBtn"
+        app:layout_constraintStart_toStartOf="@+id/clearBtn"
+        app:layout_constraintTop_toBottomOf="@+id/emailEdit" />
 
     <Button
-        android:id="@+id/ClearBtn"
+        android:id="@+id/clearBtn"
         android:layout_width="100dp"
         android:layout_height="48dp"
         android:layout_marginStart="146dp"
         android:layout_marginEnd="147dp"
         android:layout_marginBottom="49dp"
         android:text="@string/clear"
-        app:layout_constraintBottom_toTopOf="@+id/ResultTextView"
+        app:layout_constraintBottom_toTopOf="@+id/resultTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/ResultTextView"
-        app:layout_constraintTop_toBottomOf="@+id/OkBtn" />
+        app:layout_constraintStart_toStartOf="@+id/resultTextView"
+        app:layout_constraintTop_toBottomOf="@+id/okBtn" />
 
     <TextView
-        android:id="@+id/ResultTextView"
+        android:id="@+id/resultTextView"
         android:layout_width="312dp"
         android:layout_height="94dp"
         android:layout_marginStart="16dp"
@@ -88,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ClearBtn"
+        app:layout_constraintTop_toBottomOf="@+id/clearBtn"
         tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
